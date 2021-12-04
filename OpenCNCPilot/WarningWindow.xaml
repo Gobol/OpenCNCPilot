@@ -10,6 +10,6 @@
 		<TextBox Name="TextBlockWarnings" Margin="5,5,5,35" HorizontalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True"/>
 		<!--<ScrollViewer Margin="5,5,5,35" HorizontalAlignment="Stretch" IsDeferredScrollingEnabled="True">
 		</ScrollViewer>-->
-		<Button Content="Ok" Margin="0,0,10,10" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Click"/>
+		<Button Content="Ok" Margin="0,0,10,10" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Click" IsDefault="True"/>
 	</Grid>
 </Window>

@@ -24,7 +24,7 @@
 						<Button Name="ButtonDistanceMode" Content="Absolute" Click="ButtonDistanceMode_Click" Style="{StaticResource styleButton}" Margin="5,5,0,5" ToolTip="Distance Mode - Click to Toggle"/>
 						<Button Name="ButtonArcPlane" Content="XY-Plane" Click="ButtonArcPlane_Click" Style="{StaticResource styleButton}" Margin="5,5,0,5" ToolTip="Arc Plane - Click to Reset to XY"/>
 						<Button Name="ButtonUnit" Content="Metric" Click="ButtonUnit_Click" Style="{StaticResource styleButton}" Margin="5,5,0,5"  ToolTip="Unit System - Click to Toggle"/>
-						<Button Name="ButtonStatus" Content="Disconnected" Click="ButtonStatus_Click" Style="{StaticResource styleButton}" Margin="5,5,0,5"  ToolTip="Machine Status - Click to send $X to unlock"/>
+						<Button Name="ButtonStatus" Content="Disconnected" Click="ButtonStatus_Click" Style="{StaticResource styleButton}" Margin="5,5,0,5"  ToolTip="Machine Status - Click to send $X to unlock" Width="100" Height="33"/>
 						<Button Name="ButtonFeedRateOvr" Content="Feed: 100%" Click="ButtonFeedOverride_Click" Tag="100%" Style="{StaticResource styleButton}" Margin="5,5,0,5"  ToolTip="Feed Rate Override - Click to reset"/>
 
 						<Button Name="ButtonFeedHold" Click="ButtonFeedHold_Click" Content="Hold" Style="{StaticResource styleButton}" Margin="35,5,0,5"/>

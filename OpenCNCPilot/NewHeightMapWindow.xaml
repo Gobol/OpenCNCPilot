@@ -33,7 +33,7 @@
 			<Grid>
 				<Label Content="Margin (mm):" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 				<TextBox VerticalContentAlignment="Center" Height="23" Margin="87,1,10,0" TextWrapping="Wrap" Text="{Binding GCodeMargin}" VerticalAlignment="Top"/>
-				<Button Content="Apply" Click="ButtonSizeFromCode_Click" Margin="109,0,10,6" VerticalContentAlignment="Center" Height="23" VerticalAlignment="Bottom"/>
+				<Button Content="Get Size from GCode" Click="ButtonSizeFromCode_Click" Margin="26,0,10,6" VerticalContentAlignment="Center" Height="23" VerticalAlignment="Bottom"/>
 			</Grid>
 		</GroupBox>
 	</Grid>
