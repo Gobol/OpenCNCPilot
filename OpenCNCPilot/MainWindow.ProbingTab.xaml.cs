@@ -253,13 +253,15 @@ namespace OpenCNCPilot
 				{
 					try
 					{
-						string exepath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
-						string backupdir = System.IO.Path.Combine(exepath, "HeightMapBackup");
-						string filepath = System.IO.Path.Combine(backupdir, DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".hmap");
+						//string exepath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
+						//string backupdir = System.IO.Path.Combine(exepath, "HeightMapBackup");
+						//string filepath = System.IO.Path.Combine(backupdir, DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".hmap");
 
-						System.IO.Directory.CreateDirectory(backupdir);
+//						System.IO.Directory.CreateDirectory(backupdir);
+						// save completed heightmap into file in gcode directory with name "hmap_yyyy_mm_dd_HHMM.hmap"
+						Map.Save(CurrentFileName + DateTime.Now.ToString("YYYY-mm-dd-HHMM") + ".hmap");
 
-						Map.Save(filepath);
+//						Map.Save(filepath);
 					}
 					catch
 					{

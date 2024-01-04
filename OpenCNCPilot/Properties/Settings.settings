@@ -105,8 +105,8 @@ G92Z0;</Value>
     <Setting Name="FileExpanderOpen" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="EditExpanderOpen" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="EditExpanderOpen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="OverrideExpanderOpen" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -160,10 +160,13 @@ G92Z0;</Value>
       <Value Profile="(Default)">50;-150;250;-50;150;-250</Value>
     </Setting>
     <Setting Name="EthernetIP" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.2.101</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="EthernetPort" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">34000</Value>
+    </Setting>
+    <Setting Name="CheckForUpdatesAtStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

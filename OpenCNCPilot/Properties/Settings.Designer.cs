@@ -433,10 +433,10 @@ namespace OpenCNCPilot.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string EditExpanderOpen {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool EditExpanderOpen {
             get {
-                return ((string)(this["EditExpanderOpen"]));
+                return ((bool)(this["EditExpanderOpen"]));
             }
             set {
                 this["EditExpanderOpen"] = value;
@@ -649,7 +649,7 @@ namespace OpenCNCPilot.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.2.101")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string EthernetIP {
             get {
                 return ((string)(this["EthernetIP"]));
@@ -668,6 +668,18 @@ namespace OpenCNCPilot.Properties {
             }
             set {
                 this["EthernetPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CheckForUpdatesAtStart {
+            get {
+                return ((bool)(this["CheckForUpdatesAtStart"]));
+            }
+            set {
+                this["CheckForUpdatesAtStart"] = value;
             }
         }
     }

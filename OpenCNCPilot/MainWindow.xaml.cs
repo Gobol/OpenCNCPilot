@@ -86,7 +86,8 @@ namespace OpenCNCPilot
 			CheckBoxUseExpressions_Changed(null, null);
 			ButtonRestoreViewport_Click(null, null);
 
-			UpdateCheck.CheckForUpdate();
+			if (Properties.Settings.Default.CheckForUpdatesAtStart == true)
+				UpdateCheck.CheckForUpdate();
 
 			if (App.Args.Length > 0)
 			{
@@ -424,5 +425,28 @@ namespace OpenCNCPilot
 
 			return IntPtr.Zero;
 		}
-	}
+
+        private void ListViewFile_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+			var item = (sender as ListView).SelectedItem;
+			MessageBox.Show(item.ToString());
+			string _gcode = item.ToString();
+			if (_gcode.StartsWith("G"))
+            {
+				// it is a gcode command - move, probably with coords
+				LineTool.Visible = true;
+				//LineTool.Point1 = ;
+			}
+			else
+            {
+				LineTool.Visible = false;
+            }
+        }
+
+        private void Grid_PreviewMouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+			var item = (sender as ListView).SelectedItem;
+
+        }
+    }
 }
